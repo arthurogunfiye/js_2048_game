@@ -115,7 +115,7 @@ class Game {
       return this.merge(this.compress(line.reverse()));
     });
 
-    this.state = this.transpose(transposed);
+    this.state = this.transpose(transposed).reverse();
 
     if (!this.areBoardMoves(prev, this.state)) {
       this.addRandomTile();
